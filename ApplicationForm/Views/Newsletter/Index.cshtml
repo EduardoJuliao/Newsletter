@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    Html.RenderAction("Header");
+    <br />
+    Html.RenderAction("PastMonths");
+}
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/newsletter")
+}
